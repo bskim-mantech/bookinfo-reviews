@@ -16,7 +16,7 @@ FROM websphere-liberty:latest
 
 ENV SERVERDIRNAME reviews
 
-ADD ./servers/LibertyProjectServer /opt/ibm/wlp/usr/servers/defaultServer/
+ADD ./reviews-wlpcfg/servers/LibertyProjectServer /opt/ibm/wlp/usr/servers/defaultServer/
 
 RUN /opt/ibm/wlp/bin/installUtility install  --acceptLicense /opt/ibm/wlp/usr/servers/defaultServer/server.xml
 
